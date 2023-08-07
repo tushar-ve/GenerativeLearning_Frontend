@@ -90,6 +90,7 @@ input[type='text'] {
 }
 
 .card2{
+  margin-left: 10px;
   width: 98%;
   height: 430px;
   border-radius: 10px;

@@ -17,7 +17,7 @@ const Body = () => {
          <span style={{marginLeft:"39px"}}>Capabilities </span> 
           <span className='para'>Learn from your own mistakes...</span>
           <div className='search-container'>
-        <input type='text' placeholder='search' name='name' style={{marginLeft:"198px"}}/><span style={{
+        <input type='text' placeholder='search...' name='name' style={{marginLeft:"198px"}}/><span style={{
     marginLeft: "-40px", marginTop:'8px'}}><FaSearch className='search-icon' /></span>
       </div>
         </h3>
@@ -29,7 +29,7 @@ const Body = () => {
       </div>
       </div>
      
-
+      <div style={{marginLeft:'106px', marginRight:'66px'}}>
       <div className='card2'>
       <h3 className='video'>Popular Videos</h3>
       <div  style={{display:'flex', flex:'row', marginLeft:"100px"}}>
@@ -39,7 +39,29 @@ const Body = () => {
         description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
         imageUrl={image}
       />
+       <Cards
+        menuName="Menu 1"
+        description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
+        imageUrl={image}
+      />
+       <Cards
+        menuName="Menu 1"
+        description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
+        imageUrl={image}
+      />
+       <Cards
+        menuName="Menu 1"
+        description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
+        imageUrl={image}
+      />
+       <Cards
+        menuName="Menu 1"
+        description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
+        imageUrl={image}
+      />
+       
       
+      </div>
       </div>
       </div>
     </>
