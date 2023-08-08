@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap");
+/* 
+body {
+  display: flex;
+  height: 100vh;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px;
+}  */
+/* container and form */
+.signup-body {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+.container {
+  max-width: 900px;
+  width: 100%;
+  background: linear-gradient(153deg, #dbd7ff26, #7389eb5c, #9db6f308, #81a2f0);
+  padding: 180px 150px;
+  border-radius: 5px;
+}
+.form-title {
+  text-align: left;
+  margin-bottom: 80px;
+  font-size: 40px;
+  margin-top: -75px;
+}
+
+.signup {
+  margin-right: 250px;
+}
+
+/* Add styles for the form container */
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align the form elements to the left */
+}
+.signup-content {
+  margin-left: 30px; /* Adjust the left margin */
+}
+
+.form-group {
+  margin-bottom: 20px; /* Add some space between form fields */
+}
+
+.form-check-label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add some space between checkbox and text */
+  font-size: 14px;
+}
+.form-check-input {
+  margin-right: 10px; /* Add some space on the right side of the checkbox */
+}
+/* submit button */
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+.input-class {
+  width: 200px;
+  padding: 8px;
+  border-radius: 10px;
+  margin-top: 5px;
+  margin-right: 50px;
+  border: none;
+}
+
+.button-container {
+  text-align: left; /* Center the button horizontally */
+  margin-top: 30px; /* Add margin at the top to move the button below */
+}
+.register-button {
+  background-color: #435cc9;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  margin: 5px 70px;
+  border-radius: 60px;
+  cursor: pointer;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.input-icon label {
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Stack icon and input label vertically */
+  margin-bottom: 15px; /* Add space between stacked input labels */
+  font-size: 14px;
+  text-align: center;
+}
+.input-icon i {
+  margin-bottom: 5px; /* Add space between icon and input */
+}
+
+.zmdi {
+  margin-right: 20px;
+  width: 15px;
+}
+
+.register-form {
+  text-align: left;
+  flex: 1;
+}
+
+.signup-form-body {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.card1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  height: 324px;
+  background: linear-gradient(153deg, #ffffff00, #ffffff, #9db6f32e, #86a7f4ec);
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin: 10px 10px 0;
+}
+.image {
+  width: 125px;
+  height: 115px;
+  overflow: hidden;
+  margin-top: 18px;
+  background-size: cover;
+  background-position: center;
+  background-color: white;
+  border-radius: 102%;
+}
+
+.image img {
+  max-height: 100%;
+}
+
+body {
+  background-color: #f2f7fb;
+}
+
+.btn {
+  border-radius: 50px;
+  text-transform: capitalize;
+  font-size: 15px;
+  padding: 5px 19px;
+  cursor: pointer;
+}
+
+.btn-md {
+  padding: 10px 16px;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+.btn-google {
+  color: #545454;
+  background-color: #ffffff;
+  box-shadow: 0 1px 2px 1px #ddd;
+}
