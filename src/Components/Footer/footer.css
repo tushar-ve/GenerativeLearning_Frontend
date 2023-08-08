@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Bebas+Neue&family=Gideon+Roman&family=Oswald&family=Rye&display=swap');
+
+.loc{
+margin-left: 5px;
+font-family: 'Arapey', serif;
+font-weight: 700;
+margin-bottom: 5px;
+}
+
+.icon{
+  color: 'blue';
+  font-size: 30;
+
+}
+
+.icons_footer{
+  display: flex;
+  flex: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  word-spacing: 2px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+
+.leftSide{
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 48px;
+}
+
+.head{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  
+}
+
+.span1{
+  font-family: 'Arapey', serif;
+  font-weight: 500;
+  cursor: pointer;
+}
+.heading{
+  color: #3330DA;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  -moz-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  -ms-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -o-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+}
+
+.rightSide{
+  display: flex;
+  flex-direction: row;
+}
+.footer{
+  background: #ffffff94;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 163px;
+  border-radius: 0px;
+  display: flex;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .rightSide {
+    flex-direction: row; /* Revert to row layout for larger screens */
+  }
+
+  .footer {
+    flex-direction: row; /* Revert to row layout for larger screens */
+  }
+}
+

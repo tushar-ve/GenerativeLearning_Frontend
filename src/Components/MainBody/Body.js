@@ -2,8 +2,10 @@ import React from 'react'
 import Navbar from '../Header/Navbar'
 import './Body.css'
 import { FaSearch } from "react-icons/fa";
-import image from "../assets/images/Lovepik_com-611139503-Professional theme programmer cartoon illustration.png"
+import image from "../assets/images/Lovepik_com-611139503-Professional theme programmer cartoon illustration.png";
+import image2 from "../assets/images/complete-guide-to-software-testing-automation-thumbnail.png"
 import Cards from './Cards';
+import Footer from '../Footer/footer';
 const Body = () => {
   return (
     <>
@@ -32,38 +34,35 @@ const Body = () => {
       <div style={{marginLeft:'106px', marginRight:'66px'}}>
       <div className='card2'>
       <h3 className='video'>Popular Videos</h3>
-      <div  style={{display:'flex', flex:'row', marginLeft:"100px"}}>
+      <div  style={{display:'flex', flex:'row', marginLeft:"100px", justifyContent:'space-evenly'}}>
       
       <Cards
         menuName="Menu 1"
         description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-        imageUrl={image}
+        imageUrl={image2}
       />
        <Cards
         menuName="Menu 1"
         description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-        imageUrl={image}
+        imageUrl={image2}
       />
        <Cards
         menuName="Menu 1"
         description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-        imageUrl={image}
+        imageUrl={image2}
       />
+       
        <Cards
         menuName="Menu 1"
         description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-        imageUrl={image}
-      />
-       <Cards
-        menuName="Menu 1"
-        description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-        imageUrl={image}
+        imageUrl={image2}
       />
        
       
       </div>
       </div>
       </div>
+      <Footer/>
     </>
   );
 };
