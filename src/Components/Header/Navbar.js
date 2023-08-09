@@ -24,7 +24,7 @@ const Navbar = () => {
 </>
         ) : (
 
-          <button class="login-btn" onClick={()=>navigate('/login')}>Login</button>
+         <button class="login-btn" onClick={()=>navigate('/login')}>Login</button>
 
         )}
     

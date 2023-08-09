@@ -1,13 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gideon+Roman&family=Oswald&family=Rye&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Gideon+Roman&family=Oswald&family=Rye&display=swap");
 
 .navbar {
-  background: linear-gradient(to bottom, #4e8be747, #FFFFFF, #efefef52);
+  background: linear-gradient(to bottom, #4e8be747, #ffffff, #efefef52);
   color: #000000;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0px;
   flex-wrap: wrap;
+  position: relative;
 }
 
 .logo {
@@ -34,7 +35,7 @@
   text-decoration: none;
   padding: 5px 10px;
   border-radius: 5px;
-  font-family: 'Arapey', serif;
+  font-family: "Arapey", serif;
   font-size: 16px;
   font-weight: 800;
 }
@@ -45,14 +46,14 @@
 }
 
 .login-btn {
-  background-color: #5A8AD0;
+  background-color: #5a8ad0;
   color: #ffffff;
   border: none;
   padding: 9px 16px;
   border-radius: 9px;
   cursor: pointer;
   width: 101px;
-  font-family: 'Arapey', serif;
+  font-family: "Arapey", serif;
   font-size: 18px;
   margin-right: 12px;
 }
