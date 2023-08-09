@@ -144,18 +144,18 @@ const Quiz = () => {
           )}
 
           {currentPage === questions.length && !submitted && (
-            <button onClick={handleSubmitQuestion}>Submit</button>
+            <button className="button1" onClick={handleSubmitQuestion}>Submit</button>
           )}
         </div>
       )}
 
       <div className="pagination">
         {currentPage > 1 && currentPage < questions.length && !submitted && (
-          <button onClick={handlePrevQuestion}>Previous</button>
+          <button className="button1" onClick={handlePrevQuestion}>Previous</button>
         )}
 
         {currentPage < questions.length && !submitted && (
-          <button onClick={handleNextQuestion}>Next</button>
+          <button className="button1" onClick={handleNextQuestion}>Next</button>
         )}
       </div>
 
@@ -193,7 +193,7 @@ const Quiz = () => {
           </div>
 
           <div className="scorecard-button">
-            <button onClick={() => window.location.reload()}>
+            <button className="button1" onClick={() => window.location.reload()}>
               Restart Quiz
             </button>
           </div>
