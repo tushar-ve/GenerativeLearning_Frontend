@@ -4,6 +4,7 @@ import './App.css';
 import Quiz from './Components/Quiz/Quiz';
 import Body from './Components/MainBody/Body';
 import Login from './Components/Login/Login';
+// import { AuthProvider } from './Components/Context/AuthContext';
 
 function App() {
   return (
