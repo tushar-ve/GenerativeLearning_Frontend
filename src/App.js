@@ -4,7 +4,10 @@ import './App.css';
 import Quiz from './Components/Quiz/Quiz';
 import Body from './Components/MainBody/Body';
 import Login from './Components/Login/Login';
+import Signup from './Components/Registration/Signup';
 // import { AuthProvider } from './Components/Context/AuthContext';
+import PrivateRoute from './Components/Private/PrivateRoute';
+import ProfileDetails from './Components/Editors/EditorDetails/ProfileDetails';
 
 function App() {
   return (
@@ -12,8 +15,12 @@ function App() {
   
     <Routes>
       <Route path="/" element={<Body/>}/>
-      <Route path='/quiz' element={<Quiz/>}/>
+      <Route element={<PrivateRoute />}><Route path='/quiz' element={<Quiz/>}/></Route>
+      
       <Route path='/login' element={<Login/>}/>
+      <Route path='/register' element={<Signup/>}/>
+      <Route path='/profiles' element={<ProfileDetails/>}/>
+      
     </Routes>
    
     </div>

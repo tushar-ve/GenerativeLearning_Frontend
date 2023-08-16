@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Navbar from '../Header/Navbar'
 import './Body.css'
 import { FaSearch } from "react-icons/fa";
@@ -6,13 +6,24 @@ import image from "../assets/images/Lovepik_com-611139503-Professional theme pro
 import image2 from "../assets/images/complete-guide-to-software-testing-automation-thumbnail.png"
 import Cards from './Cards';
 import Footer from '../Footer/footer';
+import AuthContext from '../Context/AuthContext';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Box from '@mui/material/Box';
+import Quiztab from '../Tabs/Quiztab';
 const Body = () => {
+ 
+  const {user} = useContext(AuthContext)
   return (
     <>
       <Navbar />
 
-      <div className='body1'>
-      <div>
+      
+      {user ? ( <Quiztab/>
+          ) : (
+            <>
+            <div className='body1'>
+          <div>
       <div className="header-container">
         <h3 className='head3'>
           <span>Test Your </span>
@@ -30,7 +41,6 @@ const Body = () => {
       <img className='image1' src={image} alt="ux-design" />
       </div>
       </div>
-     
       <div style={{marginLeft:'106px', marginRight:'66px'}}>
       <div className='card2'>
       <h3 className='video'>Popular Videos</h3>
@@ -62,6 +72,11 @@ const Body = () => {
       </div>
       </div>
       </div>
+</>
+        )}
+      
+     
+     
       <Footer/>
     </>
   );

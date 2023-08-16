@@ -10,7 +10,6 @@ margin-bottom: 5px;
 .icon{
   color: 'blue';
   font-size: 30;
-
 }
 
 .icons_footer{
@@ -68,15 +67,16 @@ margin-bottom: 5px;
   border-radius: 0px;
   display: flex;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  bottom: 0;
 }
 
 @media (max-width: 768px) {
   .rightSide {
-    flex-direction: row; /* Revert to row layout for larger screens */
+    flex-direction: row; 
   }
 
   .footer {
-    flex-direction: row; /* Revert to row layout for larger screens */
+    flex-direction: row;
   }
 }
 

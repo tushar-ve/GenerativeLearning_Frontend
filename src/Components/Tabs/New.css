@@ -1,0 +1,61 @@
+
+.topic3{
+  text-align: center;
+  margin-left: 63px;
+  font-size: 20px;
+  color: #88a1e2;
+  background: #ebe6e6ba;
+  width: 61px;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.p1{
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: center;
+}
+
+.sidebar-nav-links {
+  list-style: none;
+  flex-direction: row-reverse;
+  margin: 0;
+  display: flex;
+  place-items: center;
+  justify-items: end;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-items: baseline;
+  
+}
+
+
+.sidebar-nav-links li p {
+  color: #0b0909;
+  text-decoration: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: "Arapey", serif;
+  font-size: 16px;
+  font-weight: 800;
+  background: linear-gradient(#8fa5e4, #94a9e37a, #b3b3b53b);
+}
+.sidebar-btn {
+  border: none;
+  background: none;
+  color: #418ad9;
+  cursor: pointer;
+  font-size: 16px;
+  
+}
+
+@keyframes slideNavbarWindow {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

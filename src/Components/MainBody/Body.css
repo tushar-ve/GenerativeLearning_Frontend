@@ -43,7 +43,7 @@
   align-items: center;
 }
 
-input[type='text'] {
+input[type='text'], [type='password'] {
   border: 2px solid #7298d0;
   background-color: #ffffff;
   width: 409px;
