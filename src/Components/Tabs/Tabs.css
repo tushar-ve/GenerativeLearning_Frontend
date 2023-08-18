@@ -1,7 +1,7 @@
 .content {
   background: white;
   padding: 20px;
-  width: 100%;
+  width: 98%;
   height: 100%; 
   display: none;
 }
@@ -18,9 +18,8 @@
   margin: 50px;
 }
 
-
 .New-tab{
-  background: #faebd72e;
+
 
     margin-top: 50px;
     margin-bottom: 20px;

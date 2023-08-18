@@ -9,7 +9,7 @@
   background-color:  rgb(44,64,83);
 }
 
-ul li{
+.ul11 li{
   text-transform: Uppercase;
   font-size: 1em;
   padding: 10px;
@@ -17,7 +17,7 @@ ul li{
 
 }
 
-ul li a{
+.ul11 , .li11 a{
   color: #0a0303;
   list-style: none;
 }
@@ -45,7 +45,7 @@ a:hover{
   color: #FFF;
 }
 
-ul li, .fa, h3{
+.ul11, .li11, .fa, h3{
   color: #FFF;
 }
 

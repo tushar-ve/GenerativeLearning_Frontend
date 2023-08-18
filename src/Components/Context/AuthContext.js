@@ -81,11 +81,11 @@ export const AuthProvider = ({children}) => {
     setAuthTokens(null);
     setUser(null);
     localStorage.removeItem('authTokens');
-    navigate('/login', { replace: true });
+    navigate('/', { replace: true });
   };
 
 
-  // sending data as a contextData
+  // sending data as a contextData 
 
   const contextData={
     user,

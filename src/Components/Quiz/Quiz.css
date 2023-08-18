@@ -3,17 +3,11 @@
 .quiz-container {
 
   max-width: 600px;
-
   margin: 20px auto;
-
   padding: 20px;
-
-  background: linear-gradient(to bottom, #3a73c9, #ffffff, #efefef);
-
+  background: #7791b9;
   border-radius: 8px;
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
 
  
@@ -54,7 +48,7 @@
 
   cursor: pointer;
 
-  background-color: #007bff;
+  background-color: #113357;
 
   color: #fff;
 
@@ -70,7 +64,7 @@
 
 .button1:hover {
 
-  background-color: #0056b3;
+  background-color: #13360a;
 
 }
 
@@ -238,7 +232,7 @@ input[type='radio'] {
 
 .scorecard-button button {
 
-  background-color: #007bff;
+  background-color: #224d7c;
 
   color: #fff;
 

@@ -30,15 +30,18 @@
 .namehuh {
   text-transform: capitalize;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .about {
   color: #444;
   margin-bottom: 8px;
+  cursor: pointer;
 }
 
 .email, .role {
   color: #777;
+  cursor: pointer;
 }
 
 .email::before, .role::before {
@@ -47,6 +50,7 @@
   font-weight: bold;
   margin-right: 6px;
   color: #333;
+  cursor: pointer;
 }
 .nameNew{
   font-family: 'Gideon Roman', sans-serif;

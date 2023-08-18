@@ -67,8 +67,6 @@ const Body = () => {
         description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
         imageUrl={image2}
       />
-       
-      
       </div>
       </div>
       </div>
