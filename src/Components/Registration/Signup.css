@@ -10,7 +10,7 @@ body {
 /* container and form */
 .signup-body {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
   justify-content: center;
   align-items: center;
   padding: 10px;
@@ -18,13 +18,14 @@ body {
 .container {
   max-width: 900px;
   width: 100%;
-  background: linear-gradient(153deg, #dbd7ff26, #7389eb5c, #9db6f308, #81a2f0);
+  /* background: linear-gradient(153deg, #dbd7ff26, #7389eb5c, #9db6f308, #81a2f0);
+  background: #95a8d4; */
   padding: 180px 150px;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
 .form-title {
-  text-align: left;
-  margin-bottom: 80px;
+  /* text-align: left; */
+  margin-bottom: 41px;
   font-size: 40px;
   margin-top: -75px;
 }
@@ -72,8 +73,11 @@ form .button {
 } */
 
 .button-container {
-  text-align: left; /* Center the button horizontally */
-  margin-top: 30px; /* Add margin at the top to move the button below */
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: center;
 }
 .register-button {
   background-color: #435cc9;
@@ -115,10 +119,10 @@ form .button {
 }
 
 .signup-form-body {
-  display: flex;
+  /* display: flex; */
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 30px;
+  /* margin-top: 30px; */
 }
 .card1 {
   display: flex;

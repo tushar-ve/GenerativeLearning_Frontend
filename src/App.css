@@ -1,13 +1,1 @@
-.App {
-  text-align: center;
-}
 
-body {
-  background: linear-gradient(153deg, #ffffff, #ffffff, #afc2ed42, #afc3f394);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  /* background-position: center; */
-  color: black;
-  margin-top: 0px;
-}
