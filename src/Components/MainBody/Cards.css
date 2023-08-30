@@ -1,79 +1,51 @@
-.card {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card10 {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 270px;
-  height: 324px;
-  background: linear-gradient(153deg, #ffffff00, #ffffff, #9db6f32e, #86a7f4ec);
-  border-radius: 10px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-  margin: 10px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 17rem;
+  height: auto;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.card:hover, .image:hover, .play-button:hover {
-  box-shadow: 0px 3px 15px rgba(255, 255, 255, 0.5);
-  transition: 0.3s ease-in;
-  cursor: pointer;
-}
-
-.image {  
-  background: #f5f5f5;
-  box-shadow: 0 5px 20px 2px rgba(0,0,0,0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 163px;
-  height: 146px;
-  border-radius: 69%;
-  overflow: hidden;
-  margin-top: 1px;
-  background-size: cover;
-  background-position: center;
-}
-
-.image img {
-  max-height: 100%;
-}
-
-.info-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.image {
   width: 100%;
-  padding: 0 10px;
-  margin-top: 10px;
+  height: 9rem;
+  margin-bottom: 1rem;
 }
 
-.menu-name {
-  font-weight: bold;
-  font-size: 12px;
-  text-align: center;
-  height: 30px;
-  background: linear-gradient(153deg, #d2cced, #ffffff);
-  color: #000000;
-  width: 140px;
-  border-radius: 50px;
-}
-
-.play-button {
-  background: linear-gradient(153deg, #ffffff, #ffffff);
-  /* color: #b8b1b1; */
-  padding: 0px;
-  width: 64px;
-  border: none;
- border-radius: 29px;
-  cursor: pointer;
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .description {
-  font-size: 14px;
-  text-align: left;
-  background-color: #fff;
-  margin-top: 10px;
-  margin-right: 73px;
-  width: 185px;
-  height: 114px;
-  border-radius: 6px;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  margin-left: 0.2rem;
+}
+
+.bottom {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-size: large;
+  margin-bottom: 1rem;
+  #span1 {
+    margin-left: 0.6rem;
+    font-weight: bold;
+  }
+  #span2 {
+    margin-right: 0.6rem;
+  }
 }

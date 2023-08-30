@@ -1,18 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Arapey&family=Bebas+Neue&family=Gideon+Roman&family=Oswald&family=Rye&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arapey&family=Bebas+Neue&family=Gideon+Roman&family=Oswald&family=Rye&display=swap");
 
-.loc{
-margin-left: 5px;
-font-family: 'Arapey', serif;
-font-weight: 700;
-margin-bottom: 5px;
+.loc {
+  margin-left: 5px;
+  font-family: "Arapey", serif;
+  font-weight: 700;
+  margin-bottom: 5px;
 }
 
-.icon{
-  color: 'blue';
+.icon {
+  color: "blue";
   font-size: 30;
 }
 
-.icons_footer{
+.icons_footer {
   display: flex;
   flex: row;
   flex-wrap: nowrap;
@@ -24,41 +24,36 @@ margin-bottom: 5px;
   margin-top: 5px;
 }
 
-.leftSide{
-  display:flex;
+.leftSide {
+  display: flex;
   flex-direction: column;
   align-items: flex-start;
   margin: 48px;
 }
 
-.head{
+.head {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   text-align: center;
   margin-left: 10px;
   margin-right: 10px;
-  
 }
 
-.span1{
-  font-family: 'Arapey', serif;
+.span1 {
+  font-family: "Arapey", serif;
   font-weight: 500;
   cursor: pointer;
 }
-.heading{
-  color: #3330DA;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
-  -moz-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
-  -ms-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  -o-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+.heading {
+  color: #000;
 }
 
-.rightSide{
+.rightSide {
   display: flex;
   flex-direction: row;
 }
-.footer{
+.footer {
   background: #ffffff94;
   flex-direction: row;
   justify-content: space-around;
@@ -72,11 +67,10 @@ margin-bottom: 5px;
 
 @media (max-width: 768px) {
   .rightSide {
-    flex-direction: row; 
+    flex-direction: row;
   }
 
   .footer {
     flex-direction: row;
   }
 }
-
