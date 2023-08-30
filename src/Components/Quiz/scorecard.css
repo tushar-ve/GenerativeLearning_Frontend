@@ -1,0 +1,82 @@
+.scorecard {
+  margin-top: 6px;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.scorecard p {
+  margin: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+.scorecard-score {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.scorecard-score p {
+  font-size: 18px;
+}
+
+.scorecard-score span {
+  display: block;
+  font-size: 24px;
+  color: #007bff;
+}
+
+.scorecard-answers {
+  display: grid;
+  margin-top: 3rem;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.scorecard-question {
+  margin-bottom: 18px;
+}
+
+.scorecard-question p {
+  margin-bottom: 5px;
+}
+
+.scorecard-question p.correct-answer {
+  color: #0a960a;
+}
+
+.scorecard-question p.wrong-answer {
+  color: #ff0000;
+}
+
+.scorecard-button {
+  text-align: center;
+}
+
+.scorecard-button button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.scorecard-button button:hover {
+  background-color: #53a0f3;
+}
+
+.quiz-container .scorecard {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  align-content: stretch;
+  align-items: flex-start;
+}

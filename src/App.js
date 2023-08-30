@@ -8,8 +8,7 @@ import Signup from './Components/Registration/Signup';
 // import { AuthProvider } from './Components/Context/AuthContext';
 import PrivateRoute from './Components/Private/PrivateRoute';
 import ProfileDetails from './Components/Editors/EditorDetails/ProfileDetails';
-import EditorCard from './Components/SearchVideos/EditorCard';
-
+import Scorecard from './Components/Quiz/Scorecard';
 function App() {
   return (
     <div className="App">
@@ -20,7 +19,7 @@ function App() {
         <Route path='/login' element={<Login />} />
         <Route path='/register' element={<Signup />} />
         <Route path='/profiles' element={<ProfileDetails />} />
-        <Route path='/card' element={<EditorCard />} />
+        <Route path='/card' element={<Scorecard />} />
 
       </Routes>
 

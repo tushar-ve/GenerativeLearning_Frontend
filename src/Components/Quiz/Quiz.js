@@ -3,6 +3,8 @@ import React, { useState } from "react";
 import "./Quiz.css";
 import Navbar from "../Header/Navbar";
 import { Javascript } from "@mui/icons-material";
+import Scorecard from "./Scorecard";
+import { useNavigate } from "react-router-dom";
 
 const questions = [
   {
@@ -53,7 +55,7 @@ const Quiz = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedAnswers, setSelectedAnswers] = useState({});
   const [submitted, setSubmitted] = useState(false);
-
+  const navigate = useNavigate();
   const handleNextQuestion = () => {
     if (currentPage < questions.length) {
       setCurrentPage((prevPage) => prevPage + 1);
@@ -81,28 +83,34 @@ const Quiz = () => {
     if (!submitted) {
       if (currentPage === questions.length) {
         setSubmitted(true);
+        navigate("/card", {
+          state: {
+            questions: questions,
+            selectedAnswers: selectedAnswers
+          }
+        });
       } else {
         handleNextQuestion();
       }
     }
   };
 
-  const calculateScore = () => {
-    let score = 0;
+  // const calculateScore = () => {
+  //   let score = 0;
 
-    questions.forEach((question, index) => {
-      if (selectedAnswers[index] === question.answer) {
-        score++;
-      }
-    });
+  //   questions.forEach((question, index) => {
+  //     if (selectedAnswers[index] === question.answer) {
+  //       score++;
+  //     }
+  //   });
 
-    return score;
-  };
+  //   return score;
+  // };
 
-  const calculatePercentage = () => {
-    const score = calculateScore();
-    return ((score / questions.length) * 100).toFixed(2);
-  };
+  // const calculatePercentage = () => {
+  //   const score = calculateScore();
+  //   return ((score / questions.length) * 100).toFixed(2);
+  // };
 
   return (
     <>
@@ -172,46 +180,12 @@ const Quiz = () => {
             </button>
           )}
         </div>
-
-        {submitted && currentPage === questions.length && (
-          <div className="scorecard">
-            <div className="scorecard-score">
-              <p>Your Score:</p>
-              <span>{`${calculateScore()} out of ${questions.length}`}</span>
-              <p>Percentage Correct:</p>
-              <span>{`${calculatePercentage()}%`}</span>
-            </div>
-
-            <div className="scorecard-answers">
-              <p>Answers:</p>
-              {questions.map((question, index) => (
-                <div key={index} className="scorecard-question">
-                  <p>
-                    <strong>Question {index + 1}:</strong> {question.question}
-                  </p>
-
-                  <p>
-                    <strong>Your Answer:</strong>{" "}
-                    {selectedAnswers[index] || "Not answered"}
-                  </p>
-
-                  <p>
-                    <strong>Correct Answer:</strong> {question.answer}
-                  </p>
-                </div>
-              ))}
-            </div>
-
-            <div className="scorecard-button">
-              <button
-                className="button1"
-                onClick={() => window.location.reload()}
-              >
-                Restart Quiz
-              </button>
-            </div>
-          </div>
-        )}
+        {/* {submitted && currentPage === questions.length && (
+          <Scorecard
+            questions={questions}
+            selectedAnswers={selectedAnswers}
+          />
+        )} */}
       </div>
       <div className="recommendation">
         <h2 style={{ marginLeft: "21rem" }}>Start Learning Recommendation</h2>
