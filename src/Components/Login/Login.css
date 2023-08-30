@@ -2,6 +2,12 @@
   background-color: white;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .word {
   font-family: "Gideon Roman", sans-serif;
   font-weight: 700;
@@ -19,12 +25,15 @@
 
 .login-button {
   color: rgb(0, 0, 0);
+  display: flex;
+  justify-content: center;
+  margin-left: 9rem;
   background-color: #3a73c9;
   border-style: none;
   font-size: 20px;
   border-radius: 5px;
   margin-top: 10px;
-  width: 80px;
+  width: 100px;
   font-family: Georgia, "Times New Roman", Times, serif;
   cursor: pointer;
 }

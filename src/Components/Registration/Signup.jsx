@@ -76,15 +76,14 @@ const Signup = () => {
       document.getElementById("register-form").reset();
       setEmail("");
       setName("");
-
       setPassword("");
       setPassword2("");
       setTc(false);
 
       // Navigate to the login page after a delay
-      setTimeout(() => {
-        navigate("/login");
-      }, 3000);
+      // setTimeout(() => {
+      //   navigate("/login");
+      // }, 3000);
     } catch (error) {
       console.error("Error during registration:", error);
       setError({ status: true, msg: "An error occurred during registration", type: "error" });
@@ -111,7 +110,7 @@ const Signup = () => {
             >
               <div className="form-group">
                 <label htmlFor="email" className="input-icon">
-                  <i class="zmdi zmdi-email"></i>
+                  <i className="zmdi zmdi-email"></i>
                   <input
                     className="signup-input-class"
                     type="text"
@@ -129,7 +128,7 @@ const Signup = () => {
 
               <div className="form-group">
                 <label htmlFor="name" className="input-icon">
-                  <i class="zmdi zmdi-account-add"></i>
+                  <i className="zmdi zmdi-account-add"></i>
                   <input
                     className="signup-input-class"
                     type="text"
@@ -147,7 +146,7 @@ const Signup = () => {
 
               <div className="form-group">
                 <label htmlFor="password" className="input-icon">
-                  <i class="zmdi zmdi-lock"></i>
+                  <i className="zmdi zmdi-lock"></i>
                   <input
                     className="signup-input-class"
                     type="password"
@@ -165,7 +164,7 @@ const Signup = () => {
 
               <div className="form-group">
                 <label htmlFor="password2" className="input-icon">
-                  <i class="zmdi zmdi-lock"></i>
+                  <i className="zmdi zmdi-lock"></i>
                   <input
                     className="signup-input-class"
                     type="password"

@@ -8,6 +8,13 @@ body {
   padding: 10px;
 }  */
 /* container and form */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .signup-body {
   display: flex;
   /* height: 100vh; */

@@ -1,5 +1,10 @@
 /* CardSlider.css */
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 .container {
   max-width: 100%;
   padding: 20px;
@@ -31,7 +36,8 @@
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out,
+    background-color 0.3s ease-in-out;
   background-color: #fff;
 }
 
@@ -80,16 +86,16 @@
   .container {
     padding: 40px;
   }
-  
+
   .slick-prev,
   .slick-next {
     font-size: 32px;
   }
-  
+
   .custom-card {
     flex-direction: row;
   }
-  
+
   .card-content {
     flex: 1 1;
     display: flex;
@@ -100,15 +106,15 @@
     align-items: stretch;
     flex-wrap: nowrap;
   }
-  
+
   .card-title {
     font-size: 2.2rem;
   }
-  
+
   .card-description {
     font-size: 1.2rem;
   }
-  
+
   .card-image {
     height: 100%;
     max-width: 50%;

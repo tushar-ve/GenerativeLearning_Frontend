@@ -1,269 +1,189 @@
- 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .quiz-container {
-
-  max-width: 600px;
-
-  margin: 20px auto;
-
-  padding: 20px;
-
-  background: linear-gradient(to bottom, #3a73c9, #ffffff, #efefef);
-
-  border-radius: 8px;
-
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
+  height: 25rem;
+  width: 65rem;
+  margin: 100px auto;
+  background: #ffffff;
+  border-radius: 25px;
+  box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
 }
 
- 
+.QUIZ-Attempt {
+  margin-left: 10px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 30px;
+  color: #3c67ff;
+}
+
+.Quiz-Navbar {
+  background: #7f99db;
+}
 
 .question {
-
+  margin-left: 25px;
   margin-bottom: 20px;
-
 }
-
- 
 
 .question h2 {
-
   margin-bottom: 10px;
-
-  color: #ffffff;
-
+  color: black;
 }
-
- 
 
 .label1 {
-
+  font-size: 18px;
   display: block;
-
-  margin-bottom: 10px;
-
+  margin-left: 30px;
+  margin-top: 20px;
+  margin-bottom: 15px;
 }
 
- 
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px 30px;
+  margin-right: 34%;
+  margin-left: 45%;
+  margin-top: 50px;
+  cursor: pointer;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+}
+
+button {
+  margin-right: -2rem;
+  margin-left: -2rem;
+  cursor: pointer;
+  background-color: #007bff;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  color: white;
+}
 
 .button1 {
-
-  padding: 10px 20px;
-
-  margin-right: 10px;
-
-  cursor: pointer;
-
-  background-color: #007bff;
-
+  margin-top: 3rem;
+  margin-left: 30rem;
+  border-radius: 20px;
   color: #fff;
-
+  background-color: #007bff;
+  padding: 12px 30px;
   border: none;
-
-  border-radius: 4px;
-
+  cursor: pointer;
   transition: background-color 0.3s ease;
-
 }
 
- 
-
-.button1:hover {
-
+.button:hover {
   background-color: #0056b3;
-
 }
 
- 
-
-.button1:disabled {
-
+.button:disabled {
   background-color: #ccc;
-
   cursor: not-allowed;
-
 }
-
- 
 
 .feedback {
-
   margin-top: 10px;
-
   padding: 10px;
-
   background-color: #f0f0f0;
-
   border-radius: 8px;
-
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
-
- 
 
 .correct {
-
   color: #0a960a;
-
 }
-
- 
 
 .wrong {
-
   color: #ff0000;
-
 }
-
- 
 
 /* Optional: Styling for radio buttons */
 
-input[type='radio'] {
-
+input[type="radio"] {
   margin-right: 5px;
-
 }
-
- 
 
 /* CSS for the scorecard */
 
 .scorecard {
-
   margin-top: 20px;
-
   padding: 20px;
-
   background-color: #fff;
-
   border-radius: 8px;
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
-
- 
 
 .scorecard p {
-
   margin: 0;
-
   font-weight: bold;
-
   color: #333;
-
 }
-
- 
 
 .scorecard-score {
-
   text-align: center;
-
   margin-bottom: 20px;
-
 }
-
- 
 
 .scorecard-score p {
-
   font-size: 18px;
-
 }
-
- 
 
 .scorecard-score span {
-
   display: block;
-
   font-size: 24px;
-
   color: #007bff;
-
 }
-
- 
 
 .scorecard-answers {
-
   margin-bottom: 20px;
-
 }
-
- 
 
 .scorecard-question {
-
   margin-bottom: 10px;
-
 }
-
- 
 
 .scorecard-question p {
-
   margin-bottom: 5px;
-
 }
-
- 
 
 .scorecard-question p.correct-answer {
-
   color: #0a960a;
-
 }
-
- 
 
 .scorecard-question p.wrong-answer {
-
   color: #ff0000;
-
 }
-
- 
 
 .scorecard-button {
-
   text-align: center;
-
 }
-
- 
 
 .scorecard-button button {
-
   background-color: #007bff;
-
   color: #fff;
-
   padding: 10px 20px;
-
   border: none;
-
   border-radius: 4px;
-
   cursor: pointer;
-
   transition: background-color 0.3s ease;
-
 }
-
- 
 
 .scorecard-button button:hover {
-
   background-color: #53a0f3;
-
 }
 
-
-.quiz-container .scorecard{
+.quiz-container .scorecard {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -272,5 +192,31 @@ input[type='radio'] {
   justify-content: space-evenly;
   align-content: stretch;
   align-items: flex-start;
+}
 
+.recommendation {
+  position: inherit;
+  width: 98rem;
+  height: 150px;
+  left: 330px;
+  top: 791px;
+}
+
+.recommendation-content {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-left: 15rem;
+  margin-top: 2rem;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+}
+
+.one-line {
+  display: flex;
+  justify-content: space-between;
 }

@@ -9,7 +9,8 @@ import image2 from "../assets/images/complete-guide-to-software-testing-automati
 import New from "./New";
 import Articles from "../Articles/Articles";
 import CardSlider from "./CardSlider/CardSlider";
-
+import Navbar from "../Header/Navbar";
+import SearchVideos from "../SearchVideos/SearchVideos";
 
 const Quiztab = () => {
   const [value, setValue] = React.useState("one");
@@ -20,6 +21,7 @@ const Quiztab = () => {
 
   return (
     <>
+      <Navbar />
       <Box
         sx={{
           display: "flex",
@@ -36,7 +38,9 @@ const Quiztab = () => {
           indicatorColor="secondary"
           aria-label="secondary tabs example"
         >
-          <Tab value="one" className={value === "one" ? "active-tabs" : "tabs"}
+          <Tab
+            value="one"
+            className={value === "one" ? "active-tabs" : "tabs"}
             label="Let's Learn"
           />
           <Tab
@@ -54,59 +58,17 @@ const Quiztab = () => {
       <div className="content-tabs">
         <div className={value === "one" ? "content active-content" : "content"}>
           <Quiz />
-          <New/>
-          <div className="New-tab">
-          <CardSlider/>
-          </div>
         </div>
       </div>
       <div className="content-tabs">
         <div className={value === "two" ? "content active-content" : "content"}>
-          <div className="topics1">
-            <New />
-          </div>
-          <div style={{ marginLeft: "106px", marginRight: "66px" }}>
-            <div className="card2">
-              <h3 className="video">Popular Videos</h3>
-              <div
-                style={{
-                  display: "flex",
-                  flex: "row",
-                  marginLeft: "100px",
-                  justifyContent: "space-evenly" }}
-              >
-                <Cards
-                  menuName="Menu 1"
-                  description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-                  imageUrl={image2}
-                />
-                <Cards
-                  menuName="Menu 1"
-                  description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-                  imageUrl={image2}
-                />
-                <Cards
-                  menuName="Menu 1"
-                  description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-                  imageUrl={image2}
-                />
-
-                <Cards
-                  menuName="Menu 1"
-                  description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-                  imageUrl={image2}
-                />
-              </div>
-            </div>
-          </div>
+          <SearchVideos />
         </div>
       </div>
       <div className="content-tabs">
         <div
           className={value === "three" ? "content active-content" : "content"}
         >
-        <div><New /></div>
-        <div><Articles/></div>    
         </div>
       </div>
     </>

@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-content {
+  position: relative;
+  display: contents;
+  width: 100%;
+  height: 100%;
+}
+
+.svg-container {
+  position: absolute;
+  top: -30px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+}
+
+.svg {
+  z-index: 1;
+}
+
+.editor-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

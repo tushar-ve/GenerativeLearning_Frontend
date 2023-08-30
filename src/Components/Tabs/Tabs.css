@@ -1,8 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .content {
-  background: white;
   padding: 20px;
   width: 100%;
-  height: 100%; 
+  height: 100%;
   display: none;
 }
 
@@ -11,17 +16,16 @@
 }
 
 .active-tabs::before {
-  content: '';
+  content: "";
 }
 
-.topics1{
+.topics1 {
   margin: 50px;
 }
 
-
-.New-tab{
+.New-tab {
   background: #faebd72e;
 
-    margin-top: 50px;
-    margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 20px;
 }

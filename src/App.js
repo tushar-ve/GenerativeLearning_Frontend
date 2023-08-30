@@ -1,4 +1,4 @@
-import {Route, Routes} from 'react-router-dom'
+import { Route, Routes } from 'react-router-dom'
 import './App.css';
 // import Navbar from './Components/Header/Navbar';
 import Quiz from './Components/Quiz/Quiz';
@@ -8,21 +8,22 @@ import Signup from './Components/Registration/Signup';
 // import { AuthProvider } from './Components/Context/AuthContext';
 import PrivateRoute from './Components/Private/PrivateRoute';
 import ProfileDetails from './Components/Editors/EditorDetails/ProfileDetails';
+import EditorCard from './Components/SearchVideos/EditorCard';
 
 function App() {
   return (
     <div className="App">
-  
-    <Routes>
-      <Route path="/" element={<Body/>}/>
-      <Route element={<PrivateRoute />}><Route path='/quiz' element={<Quiz/>}/></Route>
-      
-      <Route path='/login' element={<Login/>}/>
-      <Route path='/register' element={<Signup/>}/>
-      <Route path='/profiles' element={<ProfileDetails/>}/>
-      
-    </Routes>
-   
+
+      <Routes>
+        <Route path="/" element={<Body />} />
+        <Route element={<PrivateRoute />}><Route path='/quiz' element={<Quiz />} /></Route>
+        <Route path='/login' element={<Login />} />
+        <Route path='/register' element={<Signup />} />
+        <Route path='/profiles' element={<ProfileDetails />} />
+        <Route path='/card' element={<EditorCard />} />
+
+      </Routes>
+
     </div>
   );
 }

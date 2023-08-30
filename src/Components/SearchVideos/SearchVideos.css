@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.search_videos_recommendation {
+  position: inherit;
+  width: 98rem;
+  height: 150px;
+  left: 330px;
+  top: 791px;
+}
+
+.search_videos_recommendation-content {
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-left: -12rem;
+  margin-top: 2rem;
+}
+
+.search_videos_cont {
+  display: flex;
+  justify-content: center;
+}
+
+.search_videos_cards {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.search_videos_editor_card {
+  width: 75%; /* Set the width to 75% of the screen */
+  margin: 0 auto; /* Center the grid horizontally */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+@media (max-width: 768px) {
+  .search_videos_editor_card {
+    justify-content: flex-start;
+  }
+}

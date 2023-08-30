@@ -1,5 +1,10 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-.topic3{
+.topic3 {
   text-align: center;
   margin-left: 63px;
   font-size: 20px;
@@ -10,7 +15,7 @@
   border-radius: 5px;
 }
 
-.p1{
+.p1 {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
@@ -27,9 +32,7 @@
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: baseline;
-  
 }
-
 
 .sidebar-nav-links li p {
   color: #0b0909;
@@ -48,7 +51,6 @@
   color: #418ad9;
   cursor: pointer;
   font-size: 16px;
-  
 }
 
 @keyframes slideNavbarWindow {

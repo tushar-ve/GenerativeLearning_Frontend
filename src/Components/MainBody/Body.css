@@ -1,18 +1,25 @@
-@import url('https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Oswald&family=Rye&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Gideon+Roman&family=Oswald&family=Rye&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .head3 {
   color: #7298d0;
-  font-family: 'Gideon Roman', sans-serif;
+  font-family: "Gideon Roman", sans-serif;
   text-shadow: #88a1e2;
   font-size: 40px;
   word-spacing: 7px;
   display: flex;
+  align-items: center;
   flex-direction: column;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
-  -moz-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  -webkit-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  -moz-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   -ms-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  -o-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); 
+  -o-text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .header-container {
@@ -32,7 +39,7 @@
 
 .para {
   color: #010711;
-  font-family: 'Gideon Roman', sans-serif;
+  font-family: "Gideon Roman", sans-serif;
   font-size: 11px;
   word-spacing: 1px;
 }
@@ -43,7 +50,8 @@
   align-items: center;
 }
 
-input[type='text'], [type='password'] {
+input[type="text"],
+[type="password"] {
   border: 2px solid #7298d0;
   background-color: #ffffff;
   width: 409px;
@@ -52,7 +60,7 @@ input[type='text'], [type='password'] {
   padding: 10px 40px 10px 10px;
   box-sizing: border-box;
   border-radius: 34px;
-  font-family: 'Gideon Roman', sans-serif;
+  font-family: "Gideon Roman", sans-serif;
   font-size: 16px;
 }
 
@@ -60,7 +68,7 @@ input[type='text'], [type='password'] {
   right: 15px;
   font-size: 20px;
   /* background-color: #88a1e2; */
-  background: radial-gradient(circle, #5E85EA 20%, #cad7f7 80%);
+  background: radial-gradient(circle, #5e85ea 20%, #cad7f7 80%);
   color: #ffffff;
   padding: 10px;
   border-radius: 19px;
@@ -68,28 +76,28 @@ input[type='text'], [type='password'] {
   pointer-events: none;
 }
 
-.image1{
-  width:325px;
-  height:339px;
+.image1 {
+  width: 325px;
+  height: 339px;
 }
 
-.body1{
+.body1 {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   margin-top: 70px;
 }
 
-.video{
+.video {
   text-align: center;
   width: 144px;
   height: 32px;
   margin-left: 41px;
   border-radius: 6px;
-  font-family: 'Oswald', sans-serif;
-  background: linear-gradient(153deg, #5a8ad08a,#5a8ad014);
+  font-family: "Oswald", sans-serif;
+  background: linear-gradient(153deg, #5a8ad08a, #5a8ad014);
 }
 
-.card2{
+.card2 {
   margin-left: 10px;
   width: 98%;
   height: 430px;
@@ -99,4 +107,3 @@ input[type='text'], [type='password'] {
   margin: 10px;
   flex-direction: column;
 }
-
