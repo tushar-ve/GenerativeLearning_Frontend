@@ -112,21 +112,15 @@ const Quiztab = () => {
         >
           <div className="quiztab-videos-container">
             <h2>New Videos</h2>
-            <div className="quiztab-videos">
-              <Videos />
-            </div>
+            <Videos />
           </div>
           <div className="quiztab-article-container">
             <h2>New Articles</h2>
-            <div className="quiztab-articles">
-              <Articles />
-            </div>
+            <Articles />
           </div>
           <div className="quiztab-test-container">
             <h2>Test Preparation</h2>
-            <div className="quiztab-test">
-              <Videos />
-            </div>
+            <Videos />
           </div>
           <div className="quiztab-announcement-container">
             <h2>Announcements</h2>
