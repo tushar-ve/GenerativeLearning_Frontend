@@ -169,13 +169,13 @@ const Quiz = () => {
 
         <div className="pagination">
           {currentPage > 1 && currentPage < questions.length && !submitted && (
-            <button className="button" onClick={handlePrevQuestion}>
+            <button className="nav-button" onClick={handlePrevQuestion}>
               Previous
             </button>
           )}
 
           {currentPage < questions.length && !submitted && (
-            <button className="button" onClick={handleNextQuestion}>
+            <button className="nav-button" onClick={handleNextQuestion}>
               Next
             </button>
           )}

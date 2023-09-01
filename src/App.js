@@ -12,7 +12,6 @@ import Scorecard from './Components/Quiz/Scorecard';
 function App() {
   return (
     <div className="App">
-
       <Routes>
         <Route path="/" element={<Body />} />
         <Route element={<PrivateRoute />}><Route path='/quiz' element={<Quiz />} /></Route>
@@ -20,9 +19,7 @@ function App() {
         <Route path='/register' element={<Signup />} />
         <Route path='/profiles' element={<ProfileDetails />} />
         <Route path='/card' element={<Scorecard />} />
-
       </Routes>
-
     </div>
   );
 }

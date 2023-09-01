@@ -59,7 +59,7 @@
   transition: background-color 0.3s ease;
 }
 
-button {
+.nav-button {
   margin-right: -2rem;
   margin-left: -2rem;
   cursor: pointer;
@@ -83,11 +83,11 @@ button {
   transition: background-color 0.3s ease;
 }
 
-.button:hover {
+.nav-button:hover {
   background-color: #0056b3;
 }
 
-.button:disabled {
+.nav-button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
 }

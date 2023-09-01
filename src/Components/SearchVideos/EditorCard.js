@@ -4,9 +4,9 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
-import i from "../assets/images/teacher.jpg"
+// import i from "../assets/images/teacher.jpg"
 import "./EditorCard.css"
-const EditorCard = () => {
+const EditorCard = ({ key, image }) => {
     return (
         <>
             <Card sx={{ maxWidth: 345 }}>
@@ -18,16 +18,18 @@ const EditorCard = () => {
                                 <path d="M25.623 8.00513L66.5535 33.5016L25.6536 59.0472L25.623 8.00513Z" fill="black" stroke="black" />
                             </svg>
                         </div>
-                        <CardMedia
-                            component="img"
-                            className="editor-image"
-                            image={i}
-                            alt="green iguana"
-                        />
+                        <div className="image-container" style={{ height: "200px" }}>
+                            <CardMedia
+                                component="img"
+                                className="editor-image"
+                                image={image.image}
+                                alt="lecture"
+                            />
+                        </div>
                     </div>
                     <CardContent>
                         <Typography gutterBottom variant="h5" component="div" style={{ display: "flex", justifyContent: "center" }}>
-                            Tim Scotts
+                            {image.name}
                         </Typography>
                     </CardContent>
                 </CardActionArea>
@@ -35,5 +37,4 @@ const EditorCard = () => {
         </>
     )
 }
-
 export default EditorCard

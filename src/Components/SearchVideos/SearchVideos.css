@@ -24,6 +24,11 @@
 .search_videos_cont {
   display: flex;
   justify-content: center;
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  width: 4rem;
+  padding: 0.15rem;
 }
 
 .search_videos_cards {

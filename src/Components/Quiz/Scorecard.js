@@ -38,12 +38,10 @@ const Scorecard = () => {
                             <p>
                                 <strong>Question {index + 1}:</strong> {question.question}
                             </p>
-
                             <p>
                                 <strong>Your Answer:</strong>{" "}
                                 {selectedAnswers[index] || "Not answered"}
                             </p>
-
                             <p>
                                 <strong>Correct Answer:</strong> {question.answer}
                             </p>
