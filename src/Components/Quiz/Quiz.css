@@ -1,61 +1,43 @@
- 
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Libre+Baskerville&family=Nanum+Myeongjo:wght@700&display=swap");
 
 .quiz-container {
-
   max-width: 600px;
-
   margin: 20px auto;
-
   padding: 20px;
-
-  background: linear-gradient(to bottom, #3a73c9, #ffffff, #efefef);
+  background: #749bc2;
 
   border-radius: 8px;
-
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
 
- 
+.quiz-start {
+  background: #c5c5bf57;
+  padding: 4px;
+}
 
 .question {
-
   margin-bottom: 20px;
-
 }
 
- 
-
 .question h2 {
-
   margin-bottom: 10px;
 
   color: #ffffff;
-
 }
 
- 
-
 .label1 {
-
+  font-family: "Libre Baskerville", serif;
   display: block;
 
   margin-bottom: 10px;
-
 }
 
- 
-
 .button1 {
-
   padding: 10px 20px;
-
-  margin-right: 10px;
 
   cursor: pointer;
 
-  background-color: #007bff;
-
+  background-color: #0302ff;
   color: #fff;
 
   border: none;
@@ -63,31 +45,19 @@
   border-radius: 4px;
 
   transition: background-color 0.3s ease;
-
 }
-
- 
 
 .button1:hover {
-
-  background-color: #0056b3;
-
+  background-color: #13360a;
 }
 
- 
-
 .button1:disabled {
-
   background-color: #ccc;
 
   cursor: not-allowed;
-
 }
 
- 
-
 .feedback {
-
   margin-top: 10px;
 
   padding: 10px;
@@ -97,41 +67,25 @@
   border-radius: 8px;
 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-
 }
-
- 
 
 .correct {
-
   color: #0a960a;
-
 }
-
- 
 
 .wrong {
-
   color: #ff0000;
-
 }
-
- 
 
 /* Optional: Styling for radio buttons */
 
-input[type='radio'] {
-
+input[type="radio"] {
   margin-right: 5px;
-
 }
-
- 
 
 /* CSS for the scorecard */
 
 .scorecard {
-
   margin-top: 20px;
 
   padding: 20px;
@@ -141,104 +95,65 @@ input[type='radio'] {
   border-radius: 8px;
 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-
 }
 
- 
-
 .scorecard p {
-
   margin: 0;
 
   font-weight: bold;
 
   color: #333;
-
 }
-
- 
 
 .scorecard-score {
-
   text-align: center;
-
   margin-bottom: 20px;
-
 }
-
- 
 
 .scorecard-score p {
-
   font-size: 18px;
-
 }
-
- 
 
 .scorecard-score span {
-
   display: block;
-
   font-size: 24px;
-
   color: #007bff;
+}
+.answerss{
+  
+    display: grid;
+    align-content: center;
+    align-items: baseline;
+    grid-template-columns: 1fr 1fr;
 
 }
-
- 
 
 .scorecard-answers {
-
   margin-bottom: 20px;
-
 }
-
- 
 
 .scorecard-question {
-
   margin-bottom: 10px;
-
 }
-
- 
 
 .scorecard-question p {
-
   margin-bottom: 5px;
-
 }
-
- 
 
 .scorecard-question p.correct-answer {
-
   color: #0a960a;
-
 }
-
- 
 
 .scorecard-question p.wrong-answer {
-
   color: #ff0000;
-
 }
-
- 
 
 .scorecard-button {
-
   text-align: center;
-
 }
 
- 
-
 .scorecard-button button {
-
-  background-color: #007bff;
+  background-color: #224d7c;
 
   color: #fff;
 
@@ -251,19 +166,13 @@ input[type='radio'] {
   cursor: pointer;
 
   transition: background-color 0.3s ease;
-
 }
-
- 
 
 .scorecard-button button:hover {
-
   background-color: #53a0f3;
-
 }
 
-
-.quiz-container .scorecard{
+.quiz-container .scorecard {
   max-width: 800px;
   margin: 0 auto;
   display: flex;
@@ -272,5 +181,4 @@ input[type='radio'] {
   justify-content: space-evenly;
   align-content: stretch;
   align-items: flex-start;
-
 }

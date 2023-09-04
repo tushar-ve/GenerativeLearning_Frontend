@@ -3,13 +3,13 @@ import Navbar from '../Header/Navbar'
 import './Body.css'
 import { FaSearch } from "react-icons/fa";
 import image from "../assets/images/Lovepik_com-611139503-Professional theme programmer cartoon illustration.png";
-import image2 from "../assets/images/complete-guide-to-software-testing-automation-thumbnail.png"
+// import image2 from "../assets/images/complete-guide-to-software-testing-automation-thumbnail.png"
 import Cards from './Cards';
 import Footer from '../Footer/footer';
 import AuthContext from '../Context/AuthContext';
-import Tabs from '@mui/material/Tabs';
-import Tab from '@mui/material/Tab';
-import Box from '@mui/material/Box';
+// import Tabs from '@mui/material/Tabs';
+// import Tab from '@mui/material/Tab';
+// import Box from '@mui/material/Box';
 import Quiztab from '../Tabs/Quiztab';
 const Body = () => {
  
@@ -17,8 +17,6 @@ const Body = () => {
   return (
     <>
       <Navbar />
-
-      
       {user ? ( <Quiztab/>
           ) : (
             <>
@@ -35,7 +33,7 @@ const Body = () => {
       </div>
         </h3>
       </div>
-      
+
       </div>
       <div style={{marginLeft:"261px"}}>
       <img className='image1' src={image} alt="ux-design" />
@@ -44,39 +42,15 @@ const Body = () => {
       <div style={{marginLeft:'106px', marginRight:'66px'}}>
       <div className='card2'>
       <h3 className='video'>Popular Videos</h3>
-      <div  style={{display:'flex', flex:'row', marginLeft:"100px", justifyContent:'space-evenly'}}>
+      <div>
       
-      <Cards
-        menuName="Menu 1"
-        description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-        imageUrl={image2}
-      />
-       <Cards
-        menuName="Menu 1"
-        description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-        imageUrl={image2}
-      />
-       <Cards
-        menuName="Menu 1"
-        description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-        imageUrl={image2}
-      />
-       
-       <Cards
-        menuName="Menu 1"
-        description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-        imageUrl={image2}
-      />
-       
+      <Cards/>
       
       </div>
       </div>
       </div>
 </>
         )}
-      
-     
-     
       <Footer/>
     </>
   );

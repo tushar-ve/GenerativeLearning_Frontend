@@ -103,14 +103,16 @@ const Quiz = () => {
 
   return (
     <>
+    <div className="quiz-start">
       <div className="quiz-container">
         {currentPage <= questions.length && (
           <div className="question">
             <h2>{`Question ${currentPage}: ${
               questions[currentPage - 1].question
             }`}</h2>
-
+            <div className="answerss">
             {questions[currentPage - 1].options.map((option, optionIndex) => (
+              
               <label className="label1" key={optionIndex}>
                 <input
                   type="radio"
@@ -123,8 +125,9 @@ const Quiz = () => {
 
                 {option}
               </label>
+            
             ))}
-
+            </div>
             {submitted && (
               <div className="feedback">
                 {selectedAnswers[currentPage - 1] ===
@@ -199,6 +202,7 @@ const Quiz = () => {
             </div>
           </div>
         )}
+      </div>
       </div>
     </>
   );

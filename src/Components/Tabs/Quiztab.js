@@ -66,7 +66,7 @@ const Quiztab = () => {
             <New />
           </div>
           <div style={{ marginLeft: "106px", marginRight: "66px" }}>
-            <div className="card2">
+            <div className="card3">
               <h3 className="video">Popular Videos</h3>
               <div
                 style={{
@@ -80,22 +80,7 @@ const Quiztab = () => {
                   description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
                   imageUrl={image2}
                 />
-                <Cards
-                  menuName="Menu 1"
-                  description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-                  imageUrl={image2}
-                />
-                <Cards
-                  menuName="Menu 1"
-                  description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-                  imageUrl={image2}
-                />
-
-                <Cards
-                  menuName="Menu 1"
-                  description="Description of Menu 1 mbjhedjkhdfi f sjishjkchsdbcjkhdsfkcheukshdbfjkchxikshd,cnkdhsjkcsdjnckdjhfiusbj "
-                  imageUrl={image2}
-                />
+                
               </div>
             </div>
           </div>

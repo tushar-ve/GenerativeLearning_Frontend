@@ -8,6 +8,7 @@ import Signup from './Components/Registration/Signup';
 // import { AuthProvider } from './Components/Context/AuthContext';
 import PrivateRoute from './Components/Private/PrivateRoute';
 import ProfileDetails from './Components/Editors/EditorDetails/ProfileDetails';
+import SideNav from './Work_trail/SideNav';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Signup/>}/>
       <Route path='/profiles' element={<ProfileDetails/>}/>
+      <Route path='/side' element={<SideNav/>}/>
       
     </Routes>
    

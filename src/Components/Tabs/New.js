@@ -19,6 +19,8 @@ const New = () => {
     "Algorithms",
     "React.js",
   ];
+ 
+
   return (
 
        <div >
@@ -29,7 +31,7 @@ const New = () => {
               {arr.map((category) => {
                 return (
                   <li>
-                    <p className='p1'>{category} <CloseIcon/></p>
+                    <p className='p1'>{category} <CloseIcon /></p>
                   </li>
                 );
               })}

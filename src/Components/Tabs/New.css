@@ -23,11 +23,9 @@
   margin: 0;
   display: flex;
   place-items: center;
-  justify-items: end;
-  flex-wrap: nowrap;
-  justify-content: space-evenly;
+  justify-items: center;
   align-items: baseline;
-  
+  justify-content: space-evenly;
 }
 
 
@@ -40,7 +38,7 @@
   font-family: "Arapey", serif;
   font-size: 16px;
   font-weight: 800;
-  background: linear-gradient(#8fa5e4, #94a9e37a, #b3b3b53b);
+  background: #cfddf2;
 }
 .sidebar-btn {
   border: none;
