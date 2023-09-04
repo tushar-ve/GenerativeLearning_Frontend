@@ -2,17 +2,18 @@
 import React, { createContext, useState, useEffect } from 'react';
 import { useNavigate} from 'react-router-dom';
 import jwt_decode from 'jwt-decode';
-
  
 const AuthContext = createContext();
 export default AuthContext;
 
 export const AuthProvider = ({children}) => {
   
+
   const [authTokens, setAuthTokens] = useState(() => {
     const storedTokens = localStorage.getItem('authTokens');
     return storedTokens ? JSON.parse(storedTokens) : null;
   });
+ 
   
   const [user, setUser] = useState(() => {
     const storedTokens = localStorage.getItem('authTokens');
@@ -64,8 +65,6 @@ export const AuthProvider = ({children}) => {
           else if (data.tokens.role=== 'Admin'){
             navigate('/profiles',{replace:true});
           }
-          
-        
       }
        else {
         setError({ status: true, msg: 'Check your password or email', type: 'error' });
@@ -81,11 +80,11 @@ export const AuthProvider = ({children}) => {
     setAuthTokens(null);
     setUser(null);
     localStorage.removeItem('authTokens');
-    navigate('/', { replace: true });
+    navigate('/login', { replace: true });
   };
 
 
-  // sending data as a contextData 
+  // sending data as a contextData
 
   const contextData={
     user,

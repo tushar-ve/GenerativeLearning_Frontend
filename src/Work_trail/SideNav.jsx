@@ -2,7 +2,6 @@ import * as React from 'react';
 import { styled, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import MuiDrawer from '@mui/material/Drawer';
-
 import List from '@mui/material/List';
 import CssBaseline from '@mui/material/CssBaseline';
 import Typography from '@mui/material/Typography';
@@ -18,7 +17,7 @@ import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import Navbar from '../Components/Header/Navbar';
-
+import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 const drawerWidth = 240;
 
 const openedMixin = (theme) => ({
@@ -47,7 +46,6 @@ const DrawerHeader = styled('div')(({ theme }) => ({
   alignItems: 'center',
   justifyContent: 'flex-end',
   padding: theme.spacing(0, 1),
-  // necessary for content to be below app bar
   ...theme.mixins.toolbar,
 }));
 
@@ -104,14 +102,35 @@ export default function SideNav() {
                   }}
                 >
                   <InboxIcon />
+                  
                 </ListItemIcon>
                 <ListItemText primary="Home" sx={{ opacity: open ? 1 : 0 }} />
               </ListItemButton>
+              <ListItemButton
+                sx={{
+                  minHeight: 48,
+                  justifyContent: open ? 'initial' : 'center',
+                  px: 2.5,
+                }}
+              >
+                <ListItemIcon
+                  sx={{
+                    minWidth: 0,
+                    mr: open ? 3 : 'auto',
+                    justifyContent: 'center',
+                  }}
+                >
+                  <AccountCircleIcon/>
+                  
+                </ListItemIcon>
+                <ListItemText primary="Profile" sx={{ opacity: open ? 1 : 0 }} />
+              </ListItemButton>
+              
             </ListItem>
         
         </List>
       </Drawer>
-      <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
+      <Box component="main" sx={{ flexGrow: 1, p: 2 }}>
         <DrawerHeader />
         <Typography paragraph>
           jdjjxhzcjhutruefhjjdfUUDehdhihcihsdfhjhchfrehfhudhcuhxhghvhudihdfgvygdhdgfufihchhd
@@ -120,6 +139,25 @@ export default function SideNav() {
           jkdfjfhgavdhamhduefdfasdhvhfkjiurgfbcdfyeyufdugh vchgf  erug edsfafhdsy rewgfhd yuge   g gds 
           jfkhjrgfdfdsfghjgufoqueiwkOWWhgeIUDIidihcdfgyrhrfgfurhfjhcbghasjzikucvsxgfxksdKshudsgsxiudbxg
           kjhfdsuifhgdfuhxjh bDDuifhcjfduysljdshgiorefhduvc hvhscxhzvcsdcgvgksda gfvgshyr fcgsjgjkaaaaaahsufg
+        </Typography>
+        <Typography paragraph>
+          Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper
+          eget nulla facilisi etiam dignissim diam. Pulvinar elementum integer enim
+          neque volutpat ac tincidunt. Ornare suspendisse sed nisi lacus sed viverra
+          tellus. Purus sit amet volutpat consequat mauris. Elementum eu facilisis
+          sed odio morbi. Euismod lacinia at quis risus sed vulputate odio. Morbi
+          tincidunt ornare massa eget egestas purus viverra accumsan in. In hendrerit
+          gravida rutrum quisque non tellus orci ac. Pellentesque nec nam aliquam sem
+          et tortor. Habitant morbi tristique senectus et. Adipiscing elit duis
+          tristique sollicitudin nibh sit. Ornare aenean euismod elementum nisi quis
+          eleifend. Commodo viverra maecenas accumsan lacus vel facilisis. Nulla
+          posuere sollicitudin aliquam ultrices sagittis orci a.
+        </Typography>
+      </Box>
+      <Box component="main2" sx={{ flexGrow: 1, p: 2 }}>
+        <DrawerHeader />
+        <Typography paragraph>
+          changes the params
         </Typography>
         <Typography paragraph>
           Consequat mauris nunc congue nisi vitae suscipit. Fringilla est ullamcorper

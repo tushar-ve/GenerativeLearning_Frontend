@@ -89,7 +89,7 @@ input[type='text'], [type='password'] {
   background: linear-gradient(153deg, #5a8ad08a,#5a8ad014);
 }
 
-.card2{
+/* .card2{
   margin-left: 10px;
   width: 98%;
   height: 430px;
@@ -98,5 +98,5 @@ input[type='text'], [type='password'] {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   margin: 10px;
   flex-direction: column;
-}
+} */
 
