@@ -16,8 +16,6 @@
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s ease-in-out;
   margin-top: 10px;
-
- 
 }
 .dashboard-card:hover {
   transform: translateY(-5px);
@@ -37,24 +35,24 @@
   margin-bottom: 8px;
 }
 
-.email, .role {
+.email,
+.role {
   color: #777;
 }
 
-.email::before, .role::before {
-
+.email::before,
+.role::before {
   text-transform: capitalize;
   font-weight: bold;
   margin-right: 6px;
   color: #333;
 }
-.nameNew{
-  font-family: 'Gideon Roman', sans-serif;
+.nameNew {
+  font-family: "Gideon Roman", sans-serif;
   font-weight: 700;
   text-align: center;
-  margin-top: 510pxpx;
 }
-.newfloat{
+.newfloat {
   display: flex;
   flex-direction: row;
 }
